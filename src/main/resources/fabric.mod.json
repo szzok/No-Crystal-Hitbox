@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "nocrystalhitbox",
+  "version": "${version}",
+  "name": "nocrystalhitbox",
+  "description": "removes the hitbox of the end crystal",
+  "authors": ["szok"],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/nocrystalhitbox/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "net.szokk.nocrystalhitbox.client.MainClient"
+    ],
+    "main": [
+      "net.szokk.nocrystalhitbox.Main"
+    ]
+  },
+  "mixins": [
+    "nocrystalhitbox.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
